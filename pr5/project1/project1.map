@@ -1,0 +1,104 @@
+HI-TECH Software 8051-C Compiler V9.60
+
+Linker command line:
+
+--edf=C:\PROGRA~2\HI-TECH Software\HC51\lite\9.60\dat\en_msgs.txt \
+  -h+Z:\project1.sym -z -Q8051AH -ol.obj -MZ:\project1.map -E1 \
+  -ver=8051-C#V9.60 -ACODE=00h-0FFFh -pvectors=00h \
+  -prbit=0/20h,rbss,rdata/CODE,irdata/CODE,idata/rbss -pbss=XDATA/idata \
+  -pdata=CODE+100h -pconst=CODE+100h -pstrings=CODE+100h -pnvram=bss,heap \
+  C:\Users\User\AppData\Local\Temp\sa1o.obj Z:\main_0.obj \
+  C:\PROGRA~2\HI-TECH Software\HC51\lite\9.60\lib\51--nsc.lib 
+
+Object code version is 3.8
+
+Machine type is 8051AH
+
+Call graph:
+
+*start1 size 0,0 offset 0
+*    _main size 0,46 offset 0
+
+		Name          Link     Load   Length Selector Space Scale
+C:\Users\User\AppData\Local\Temp\sa1o.obj
+		vectors          0        0        3       0     0
+		text            C9       C9       14       0     0
+Z:\main_0.obj   data           100      100       2A     100     0
+		strings        12A      12A       21     100     0
+		text             3        3       C6       0     0
+
+C:\PROGRA~2\HI-TECH Software\HC51\lite\9.60\lib\51--nsc.lib
+ldc_byte.obj    text           14B      14B       73     100     0
+powerup.obj     text            DD       DD        3       0     0
+str_cops.obj    text           1BE      1BE       41     100     0
+
+COMMON          rbss            20       20       2E      20     1
+
+TOTAL		Name          Link     Load   Length
+	CLASS	CODE     
+		vectors          0        0        3
+		data           100      100       2A
+		text            C9       C9       14
+		strings        12A      12A       21
+		text             3        3       C6
+		text           14B      14B       73
+		text            DD       DD        3
+		text           1BE      1BE       41
+
+	CLASS	DATA     
+		rbss            20       20       2E
+
+	CLASS	XDATA    
+
+	CLASS	BITSEG   
+
+
+
+SEGMENTS	Name		Load	Length	 Top	Selector    Space Class
+
+		vectors         000000	0000E0	0000E0	       0       0  CODE    
+		rbit            000020	00002E	00004E	      20       1  BITSEG  
+		data            000100	0000FF	0001FF	     100       0  CODE    
+
+
+UNUSED ADDRESS RANGES
+
+	CODE             0E0-0FF
+	                 1FF-FFF
+
+                                  Symbol Table
+
+?a_main        rbss    020  __Bbss         bss     04E
+__Bidata       idata   04E  __Birdata      irdata  003
+__Brbit        rbit    020  __Brdata       rdata   003
+__Hbss         bss     04E  __Hcode        code    04E
+__Hconst       const   100  __Hdata        data    12A
+__Hheap        heap    04E  __Hidata       idata   04E
+__Hirdata      irdata  04E  __Hnvram       nvram   04E
+__Hrbit        rbit    000  __Hrbss        rbss    04E
+__Hrdata       rdata   04E  __Hstrings     strings 14B
+__Htext        text    04E  __Hvectors     vectors 003
+__Lbss         bss     04E  __Lcode        code    04E
+__Lconst       const   100  __Ldata        data    100
+__Lheap        heap    04E  __Lidata       idata   04E
+__Lirdata      irdata  04E  __Lnvram       nvram   04E
+__Lrbit        rbit    000  __Lrbss        rbss    020
+__Lrdata       rdata   04E  __Lstrings     strings 12A
+__Ltext        text    04E  __Lvectors     vectors 000
+__S0           (abs)   1FF  _exit          text    0DA
+_main          text    003  intlevel0      (abs)   000
+intlevel1      (abs)   000  ldb_r0         text    15A
+ldb_r1         text    167  ldb_r2         text    174
+ldb_r3         text    181  ldb_r4         text    18E
+ldb_r5         text    19B  ldb_r6         text    1A8
+ldb_r7         text    1B5  ldc_byte       text    14B
+ldc_r0         text    156  ldc_r1         text    163
+ldc_r2         text    170  ldc_r3         text    17D
+ldc_r4         text    18A  ldc_r5         text    197
+ldc_r6         text    1A4  ldc_r7         text    1B1
+powerup        text    0DD  small_model    (abs)   001
+stack_internal (abs)   001  start          vectors 000
+start1         text    0C9  str_copy       text    1D4
+str_load       text    1D4  str_xcopy      text    1BE
+strx_copy      text    1D4  strx_load      text    1D4
+strx_xcopy     text    1BE  

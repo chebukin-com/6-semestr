@@ -1,0 +1,96 @@
+__Lrdata 4E FFFFFFB5 DATA
+__Hrbss 4E 0 DATA
+__Lrbss 20 0 DATA
+strx_xcopy 1BE 0 CODE
+__Birdata 3 FFFFFFB5 DATA
+__Hirdata 4E FFFFFFB5 DATA
+__Lirdata 4E FFFFFFB5 DATA
+powerup DD 0 CODE
+__Htext 4E 0
+__Ltext 4E 0
+strx_copy 1D4 0 CODE
+__Hcode 4E 0
+__Lcode 4E 0
+ldb_r0 15A 0 CODE
+ldc_r0 156 0 CODE
+__Hdata 12A 0 CODE
+__Hconst 100 0 CODE
+__Ldata 100 0 CODE
+__Lconst 100 0 CODE
+__Bbss 4E 0 XDATA
+ldb_r1 167 0 CODE
+ldc_r1 163 0 CODE
+__Hbss 4E 0 XDATA
+__Hstrings 14B 0 CODE
+ldb_r2 174 0 CODE
+ldc_r2 170 0 CODE
+__Lbss 4E 0 XDATA
+__Lstrings 12A 0 CODE
+ldb_r3 181 0 CODE
+ldc_r3 17D 0 CODE
+ldb_r4 18E 0 CODE
+ldc_r4 18A 0 CODE
+ldb_r5 19B 0 CODE
+ldc_r5 197 0 CODE
+str_xcopy 1BE 0 CODE
+__S0 1FF 0
+ldb_r6 1A8 0 CODE
+ldc_r6 1A4 0 CODE
+ldb_r7 1B5 0 CODE
+ldc_r7 1B1 0 CODE
+start1 C9 0 CODE
+__Hnvram 4E 0 XDATA
+small_model 1 0
+__Lnvram 4E 0 XDATA
+ldc_byte 14B 0 CODE
+__Hheap 4E 0 XDATA
+__Lheap 4E 0 XDATA
+_main 3 0 CODE
+str_copy 1D4 0 CODE
+?a_main 20 0 DATA
+_exit DA 0 CODE
+start 0 0 CODE
+intlevel0 0 0
+strx_load 1D4 0 CODE
+__Brbit 20 20 BITSEG
+str_load 1D4 0 CODE
+__Hrbit 0 20 BITSEG
+intlevel1 0 0
+__Hvectors 3 0 CODE
+__Lrbit 0 20 BITSEG
+__Lvectors 0 0 CODE
+__Bidata 4E 0 DATA
+__Hidata 4E 0 DATA
+__Lidata 4E 0 DATA
+stack_internal 1 0
+__Brdata 3 FFFFFFB5 DATA
+__Hrdata 4E FFFFFFB5 DATA
+%segments
+vectors 0 DF CODE
+rbit 0 2D BITSEG
+data 100 1FE CODE
+%locals
+Z:\main_0.obj
+C:\практики\pr5\project1\main.c
+3 3 0 CODE
+5 6 0 CODE
+6 C 0 CODE
+7 1B 0 CODE
+11 2A 0 CODE
+13 39 0 CODE
+15 48 0 CODE
+16 52 0 CODE
+18 61 0 CODE
+20 6D 0 CODE
+21 70 0 CODE
+22 73 0 CODE
+23 76 0 CODE
+24 79 0 CODE
+25 7C 0 CODE
+26 7F 0 CODE
+28 A4 0 CODE
+29 A7 0 CODE
+16 AA 0 CODE
+13 B6 0 CODE
+12 C2 0 CODE
+34 C5 0 CODE
